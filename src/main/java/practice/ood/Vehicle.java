@@ -1,7 +1,12 @@
 package practice.ood;
 
-public abstract class Vehicle {
+public class Vehicle {
 
-  private int licenseNo;
-  public abstract void assignTicket(ParkingTicket parkingTicket);
+    public String vehicleNumber;
+    public VehicleSize vehicleSize;
+
+    public Vehicle(String vehicleNumber, VehicleSize vehicleSize) {
+        this.vehicleNumber = vehicleNumber;
+        this.vehicleSize = vehicleSize;
+    }
 }
